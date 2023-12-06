@@ -8,17 +8,34 @@
 }
 
 body {
-	background: #000000;
+	background: #000;
 }
 
+
+img {
+	width: 100vw;
+	height: 381px;
+	object-fit: cover;
+	padding: 150px;
+	margin: 0;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+}
 
 h1 {
 	color: #DC3545;
 	font-family: 'Inknut Antiqua', serif;
-	font-size: 48px;
+	font-size: 150px;
 	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-20%, -80%);
 }
 
 .intro {
@@ -30,8 +47,21 @@ h1 {
 	line-height: normal;
 }
 
+.start-button {
+	background-color: white;
+	color: #495057;
+	border-radius: 8px;
+	padding: 16px 24px;
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+
+
 .where {
-	color: #FFFFFF;
+	color: #FFF;
 	font-family: 'Inknut Antiqua', serif;
 	font-size: 18px;
 	font-style: normal;
@@ -40,14 +70,82 @@ h1 {
 	letter-spacing: -0.8px;
 }
 
+.ear-button,
+.lip-button,
+.body-button {
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 18px;
+	color: #6C757D;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	padding: 16px 24px;
+}
+
+
 .pain {
-	color: #FFFFFF;
+	color: #FFF;
 	font-family: 'Inknut Antiqua', serif;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
 	letter-spacing: -0.7px;
+}
+
+.button-group-pain {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-low {
+	background-color: #ADB5BD;
+	color: #6C757D;
+	padding: 10px 16px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	width: 226px;
+	height: 53px;
+	text-align: center;
+	line-height: 53px
+}
+
+.button-mid {
+	background-color: #DEE2E6;
+	color: #6C757D;
+	padding: 10px 16px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	width: 226px;
+	height: 53px;
+	text-align: center;
+	line-height: 53px
+}
+
+.button-high {
+	background-color: #F8F9FA;
+	color: #6C757D;
+	padding: 10px 16px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	width: 226px;
+	height: 53px;
+	text-align: center;
+	line-height: 53px
 }
 
 .time {
@@ -58,243 +156,97 @@ h1 {
 	font-weight: 700;
 	line-height: normal;
 	letter-spacing: -0.7px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.conch-what {
-	color: #E9ECEF;
+.rectangle {
+	height: 338px;
+	width: 1280px;
+	background-color: white;
+	position: relative;
+	text-align: center;
+}
+
+.button-group-time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button-2 {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	color: #FFF;
+	text-align: center;
 	font-family: 'Inter', sans-serif;
-	font-size: 13px;
+	font-size: 20px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 500;
 	line-height: normal;
+	padding: 10px 16px;
+	background-color: #CED4DA;
 }
 
-.conch-type {
-	color: #E9ECEF;
+.button-4 {
+	color: #FFF;
+	text-align: center;
 	font-family: 'Inter', sans-serif;
-	font-size: 13px;
+	font-size: 20px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 500;
 	line-height: normal;
+	padding: 10px 16px;
+	background-color: #495057;
 }
 
-.conch-heal {
-	color: #E9ECEF;
+.button-6 {
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: #FFF;
+	text-align: center;
 	font-family: 'Inter', sans-serif;
-	font-size: 13px;
+	font-size: 20px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 500;
 	line-height: normal;
+	padding: 10px 16px;
+	background-color: #212529;
 }
 
-.lobe-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.lobe-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.lobe-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.tragus-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.tragus-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.tragus-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.angel-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.angel-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.angel-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.tongue-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.tongue-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.tongue-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.dahlia-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.dahlia-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.dahlia-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.belly-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.belly-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.belly-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.dermal-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.dermal-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.dermal-heal {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
+.conch-what,
+.conch-type,
+.conch-heal,
+.lobe-what,
+.lobe-type,
+.lobe-heal,
+.tragus-what,
+.tragus-type,
+.tragus-heal,
+.angel-what,
+.angel-type,
+.angel-heal,
+.tongue-what,
+.tongue-type,
+.tongue-heal,
+.dahlia-what,
+.dahlia-type,
+.dahlia-heal,
+.belly-what,
+.belly-type,
+.belly-heal,
+.dermal-what,
+.dermal-type,
+.dermal-heal,
+.surface-type,
+.surface-heal,
 .surface-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.surface-type {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
-
-.surface-heal {
 	color: #E9ECEF;
 	font-family: 'Inter', sans-serif;
 	font-size: 13px;
@@ -321,86 +273,14 @@ p {
 	line-height: 18px;
 }
 
-.conch {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.lobe {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.tragus {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.angel {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.tongue {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.dahlia {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.belly {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
-.dermal {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
-}
-
+.conch,
+.lobe,
+.tragus,
+.angel,
+.tongue,
+.dahlia,
+.belly,
+.dermal,
 .surface {
 	color: #DC3545;
 	font-family: 'Inknut Antiqua', serif;

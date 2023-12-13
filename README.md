@@ -1,8 +1,8 @@
-# Final Project (Replace with your project name)
+# Studzzes
 
 ## Description
 
-Please add a brief description of your final project here.
+Studzzes stands for the combination of studs and quizzes. This website aims to choose a random piercing for audience based on 3 simple quizzes.
 
 ## Project Documentation
 

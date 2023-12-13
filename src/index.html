@@ -2,191 +2,352 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Update your description here" />
-	<title>Studzzes</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
-	<!--
-		This is where you should link your CSS file.
-	-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Studzzes</title>
 </head>
 
-
 <body>
+    <!-- homepage -->
+    <div id="index">
+        <section class="index_homepage">
+            <div class="index_container">
+                <img class="index_phone_img" src="./images/IMG_0303 2.PNG" alt="studzzes">
+                <img class="index_pc_img" src="./images/panaltwo.png" alt="studzzes">
+                <h1 class="index_title">Studzzes</h1>
+            </div>
+            <div class="index_footer">
+                <section class="index_intro">
+                    <h2 class="index_intro_one">What is your next Piercing going to be?</h2>
+                    <h2 class="index_intro_two">Studs &plus; Quizzes</h2>
+                </section>
+                <button id="btnindex" class="index_start-button">Let's Start</button>
+            </div>
+        </section>
+    </div>
 
-	<main class="content-container">
-		<section class="homepage">
-			<div class="container">
-				<img src="/images/IMG_0303 2.PNG" alt="studzzes">
-				<h1>Studzzes</h1>
-			</div>
-			<section class="intro">
-				<h2>What is your next Piercing going to be?</h2>
-				<h2>Studs &plus; Quizzes</h2>
-			</section>
+    <!-- Where do you want it to be?-->
+    <div id="whereToBe">
+        <section class="whereToBe_wherepage">
+            <h2 class="whereToBe_where">Where do you want it to be?</h2>
+            <div class="whereToBe_wherepage_btn">
+                <button class="whereToBe_ear-button" id="whereToBeear">Ear</button>
+                <button class="whereToBe_lip-button" id="whereToBelip">Facial &amp;
+                    Lips</button>
+                <button class="whereToBe_body-button" id="whereToBebdy">Body</button>
+            </div>
+        </section>
+    </div>
 
-			<button class="start-button">Let's Start</button>
-		</section>
+    <!-- What is your pain level? -->
+    <div id="painLevel">
+        <div class="painLevel_painpage">
+            <img class="painLevel_oneimg" src="./images/IMG_0303 2.PNG" alt="">
+            <img class="painLevel_pc_img" src="./images/painLevel.png" alt="">
+            <section class="painLevel_text">
+                <h2 class="painLevel_pain">What is your pain level?</h2>
+                <div class="painLevel_button-group-pain">
+                    <button class="painLevel_button-low" id="painLevellow">Low</button>
+                    <button class="painLevel_button-mid" id="painLevelmid">Mid</button>
+                    <button class="painLevel_button-high" id="painLevelhigh">High</button>
+                </div>
+            </section>
+            <img class="painLevel_twoimg" src="./images/panaltwo.png" alt="">
+        </div>
+    </div>
 
-		<section class="wherepage">
-			<h2 class="where">Where do you want it to be?</h2>
-			<button class="ear-button">Ear</button>
-			<button class="lip-button">Facial &amp; Lips</button>
-			<button class="body-button">Body</button>
-		</section>
+    <!-- How long do you expect it to heal? Ear -->
+    <div id="howlongEar">
+        <section class="timepage">
+            <div class="rectangle">
+                <h2 class="time">How long do you expect it to heal?</h2>
+                <div class="button-group-time">
+                    <button id="howlongEar_low" class="button-2">1- 3 months</button>
+                    <button id="howlongEar_mid" class="button-4">3- 6 months</button>
+                    <button id="howlongEar_high" class="button-6">6- 8 months</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- How long do you expect it to heal? Lip -->
+    <div id="howlongLip">
+        <section class="timepage">
+            <div class="rectangle">
+                <h2 class="time">How long do you expect it to heal?</h2>
+                <div class="button-group-time">
+                    <button id="howlongLip_low" class="button-2">1- 4 months</button>
+                    <button id="howlongLip_mid" class="button-4">4- 6 months</button>
+                    <button id="howlongLip_high" class="button-6">4- 6 months</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- How long do you expect it to heal? Body -->
+    <div id="howlongBody">
+        <section class="timepage">
+            <div class="rectangle">
+                <h2 class="time">How long do you expect it to heal?</h2>
+                <div class="button-group-time">
+                    <button id="howlongBody_low" class="button-2">1- 3 months</button>
+                    <button id="howlongBody_mid" class="button-4">3- 6 months</button>
+                    <button id="howlongBody_high" class="button-6">6- 8 months</button>
+                </div>
+            </div>
+        </section>
+    </div>
 
-		<section class="painpage">
-			<h2 class="pain">What is your pain level?</h2>
-			<div class="button-group-pain">
-				<div class="button-low">Low</div>
-				<div class="button-mid">Mid</div>
-				<div class="button-high">High</div>
-			</div>
-		</section>
+    <!-- Ear:1-3 months—lobe piercing -->
+    <div id="earlobe">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Lobe Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is a Lobe Piercing?</h3>
+                    <p class="textcolor">The lobe is the lower section of the ear, which is one of the most common
+                        piercings.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Lobe Piercings</h3>
+                    <ul class="textcolor">
+                        <li><span class="pointTitle">Studs:</span> Studs are great picks for new lobe piercings, as they
+                            are small and comfortable (plus
+                            they're
+                            easy to change when the time comes). </li>
+                        <li><span class="pointTitle">Rings:</span> Once they are healed, you can wear almost any types
+                            of jewelry, rings and hoops are
+                            people’s
+                            top choices. </li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">2 to 4 months.</p>
+                </div>
+            </section>
+            <img src="./images/earlow.png" alt="">
+        </div>
+    </div>
 
-		<section class="timepage">
-			<div class="rectangle">
-				<h2 class="time">How long do you expect it to heal?</h2>
-				<div class="button-group-time">
-					<div class="button-2">2-4 months</div>
-					<div class="button-4">4-6 months</div>
-					<div class="button-6">6-8 months</div>
-				</div>
-			</div>
-		</section>
+    <!-- 3-6 months—conch piercing -->
+    <div id="earconch">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Conch Piercing-Ear</h2>
+                    <h3 class="lobe-what titleerji">What is a Conch Piercing?</h3>
+                    <p class="textcolor">A conch piercing is located in the center part of the ear—aka the area with the
+                        most room—and because of
+                        its placement, it's one of the most customizable ear piercings you can get.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Conch Piercings</h3>
+                    <ul class="textcolor">
+                        <li>Conch studs or bars: Studs and bars are great picks for new inner conch piercings, as they
+                            are small
+                            and
+                            comfortable (plus they're easy to change when the time comes).</li>
+                        <li><span class="pointTitle">Hoops:</span>Small hoops are another popular pick for conches
+                            (especially outer conches) as they come in
+                            all
+                            different variations. They aren't used as an initial piercing.</li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">4 to 6 months.</p>
+                </div>
+            </section>
+            <img src="./images/conch.png" alt="">
+        </div>
+    </div>
 
-		<section class="conch-ear">
-			<h2 class="conch">Conch Piercing</h2>
-			<h3 class="conch-what">What is a Conch Piercing?</h3>
-			<p>A conch piercing is located in the center part of the ear—aka the area with the most room—and because of
-				its placement, it's one of the most customizable ear piercings you can get.</p>
-			<h3 class="conch-type">Types of Jewelry Used for Conch Piercings</h3>
-			<ul>
-				<li>Conch studs or bars: Studs and bars are great picks for new inner conch piercings, as they are small
-					and
-					comfortable (plus they're easy to change when the time comes).</li>
-				<li>Hoops: Small hoops are another popular pick for conches (especially outer conches) as they come in
-					all
-					different variations. They aren't used as an initial piercing.</li>
-			</ul>
-			<h3 class="conch-heal">Healing Time</h3>
-			<p>4 to 6 months.</p>
-		</section>
+    <!-- 6-8months—tragus piercing -->
+    <div id="eartragus">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Tragus Piercing-Ear</h2>
+                    <h3 class="lobe-what titleerji">What is a Tragus Piercing?</h3>
+                    <p class="textcolor">A tragus piercing sits on the small area of cartilage that partially covers
+                        yourear canal. In terms of anatomy, the outer ear is made up of cartilage and skin.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Tragus Piercings</h3>
+                    <ul class="textcolor">
+                        <li><span class="pointTitle">Stud:</span> Small and simple, studs are a great option for tragus
+                            piercings, whichtend to be tiny. A ball stud, which has smooth edges that are less likely
+                            tosnaa on hair and clothing.is ideal for a new piercing.</li>
+                        <li><span class="pointTitle">Barbell:</span>A barbell is an earring with balls on both ends and
+                            a bar in
+                            thecenter. Tragus barbells will be smaller than most.</li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">6 to 8 months.</p>
+                </div>
+            </section>
+            <img src="./images/trugers.png" alt="">
+        </div>
+    </div>
 
-		<section class="lobe-ear">
-			<h2 class="lobe">Lobe Piercing</h2>
-			<h3 class="lobe-what">What is a Lobe Piercing?</h3>
-			<p>The lobe is the lower section of the ear, which is one of the most common piercings.</p>
-			<h3 class="lobe-type">Types of Jewelry Used for Lobe Piercings</h3>
-			<ul>
-				<li>Studs: Studs are great picks for new lobe piercings, as they are small and comfortable (plus they're
-					easy to change when the time comes). </li>
-				<li>Rings: Once they are healed, you can wear almost any types of jewelry, rings and hoops are people’s
-					top choices. </li>
-			</ul>
-			<h3 class="lobe-heal">Healing Time</h3>
-			<p>2 to 4 months.</p>
-		</section>
+    <!-- Lip：1-4 months— tongue piercing -->
+    <div id="liptongue">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Tongue Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is a Tongue Piercing?</h3>
+                    <p class="textcolor">A tongue piercing is any body modification that involves piercing a piece of
+                        jewelry through the tongue.
+                        The most common is the midline piercing, a vertical piercing involving a needle going straight
+                        through
+                        at one point from top to bottom in the center of the tongue.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Tongue Piercings</h3>
+                    <ul class="textcolor">
+                        <li><span class="pointTitle">Barbell:</span>A barbell is, at the basic level, a metal bar with a
+                            small bead affixed on both ends;
+                            typically one is removable and one isn’t. A barbell is inserted in a tongue piercing by
+                            pushing it
+                            through behind the needle. For tongue piercings, barbells must be straight</li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">1 to 2 months.</p>
+                </div>
+            </section>
+            <img src="./images/tongue.png" alt="">
+        </div>
+    </div>
 
-		<section class="angel-lip">
-			<h2 class="angel">Angel-Bites Piercing</h2>
-			<h3 class="angel-what">What is an Angel-Bites Piercing?</h3>
-			<p>Angel bites are a set of piercings with each one sitting symmetrically just above your upper lip. These
-				are two identical single piercings on each side of the upper lip. Angel bites are also sometimes called
-				“anti-bite” piercings, as they have the opposite placement of snake bites.</p>
-			<h3 class="angel-type">Types of Jewelry Used for Angel-Bites Piercings</h3>
-			<ul>
-				<li>Labret stud: Labret studs are composed of a fixed, flat back and a threaded, removable accessory
-					affixed on the front.</li>
-			</ul>
-			<h3 class="angel-heal">Healing Time</h3>
-			<p>3 to 4 months.</p>
-		</section>
+    <!-- 4-6 months— angel bites -->
+    <div id="lipangel">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Angel-Bites Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is an Angel-Bites Piercing?</h3>
+                    <p class="textcolor">Angel bites are a set of piercings with each one sitting symmetrically just
+                        above your upper lip. These
+                        are two identical single piercings on each side of the upper lip. Angel bites are also sometimes
+                        called
+                        “anti-bite” piercings, as they have the opposite placement of snake bites.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Angel-Bites Piercings</h3>
+                    <ul class="textcolor">
+                        <li>Labret stud: Labret studs are composed of a fixed, flat back and a threaded, removable
+                            accessory
+                            affixed on the front.</li>
+                        <li><span class="pointTitle">Hoops:</span>Small hoops are another popular pick for conches
+                            (especially outer conches) as they come in
+                            all
+                            different variations. They aren't used as an initial piercing.</li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">3 to 4 months.</p>
+                </div>
+            </section>
+            <img src="./images/mouce.png" alt="">
+        </div>
+    </div>
 
-		<section class="tongue-lip">
-			<h2 class="tongue">Tongue Piercing</h2>
-			<h3 class="tongue-what">What is a Tongue Piercing?</h3>
-			<p>A tongue piercing is any body modification that involves piercing a piece of jewelry through the tongue.
-				The most common is the midline piercing, a vertical piercing involving a needle going straight through
-				at one point from top to bottom in the center of the tongue.</p>
-			<h3 class="tongue-type">Types of Jewelry Used for Tongue Piercings</h3>
-			<ul>
-				<li>Barbell: A barbell is, at the basic level, a metal bar with a small bead affixed on both ends;
-					typically one is removable and one isn’t. A barbell is inserted in a tongue piercing by pushing it
-					through behind the needle. For tongue piercings, barbells must be straight</li>
-			</ul>
-			<h3 class="tongue-heal">Healing Time</h3>
-			<p>1 to 2 months.</p>
-		</section>
+    <!-- 4-6 months— dahlia piercing -->
+    <div id="lipdahlia">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Dahlia Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is a Dahlia Piercing?</h3>
+                    <p class="textcolor">Dahlia piercings are double facial piercings on either side of the mouth.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Dahlia Piercings</h3>
+                    <ul class="textcolor">
+                        <li>Studs: flat back labret studs are the most common jewelry for the Dahlia piercing. The small
+                            beads
+                            at either side of the mouth accentuate the smile look. Most are pierced with a 14G needle.
+                        </li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">6 months to 1 year.</p>
+                </div>
+            </section>
+            <img src="./images/dahlia.png" alt="">
+        </div>
+    </div>
 
-		<section class="dahlia-lip">
-			<h2 class="dahlia">Dahlia Piercing</h2>
-			<h3 class="dahlia-what">What is a Dahlia Piercing?</h3>
-			<p>Dahlia piercings are double facial piercings on either side of the mouth.</p>
-			<h3 class="dahlia-type">Types of Jewelry Used for Dahlia Piercings</h3>
-			<ul>
-				<li>Studs: flat back labret studs are the most common jewelry for the Dahlia piercing. The small beads
-					at either side of the mouth accentuate the smile look. Most are pierced with a 14G needle.</li>
-			</ul>
-			<h3 class="dahlia-heal">Healing Time</h3>
-			<p>6 months to 1 year.</p>
-		</section>
+    <!-- Body：1-3 months— dermal piercing -->
+    <div id="bdydermal">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Dermal Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is a Dermal Piercing?</h3>
+                    <p class="textcolor">A dermal piercing, also known as micro-dermal piercings or single-point
+                        piercings—are piercings that lie
+                        flat against the surface of the skin.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Dermal Piercings</h3>
+                    <ul class="textcolor">
+                        <li><span class="pointTitle">Dermal Anchor:</span>Dermal anchor, which comes in flat-footed and
+                            rounded-base varieties. These are both
+                            acceptable, but a flat-footed anchor is more common and more widely liked because the foot
+                            is at an
+                            angle, making it less likely to let go of your skin and pop out than a rounded-base type.
+                        </li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">1 to 3 months.</p>
+                </div>
+            </section>
+            <img src="./images/dermal.png" alt="">
+        </div>
+    </div>
 
-		<section class="belly-body">
-			<h2 class="belly">Navel Piercing</h2>
-			<h3 class="belly-what">What is a Navel Piercing?</h3>
-			<p>A navel piercing, also known as belly button piercing, is a piercing through the skin located directly
-				above the belly button. This allows the jewelry to hang slightly over the belly button to essentially
-				highlight itself.</p>
-			<h3 class="belly-type">Types of Jewelry Used for Navel Piercings</h3>
-			<ul>
-				<li>Curved Barbell: The typical and most popular jewelry choice for belly button piercings is a curved
-					barbell, which slightly curves outward to pop against your belly button and generally fits better
-					with the natural shape of your body.</li>
-				<li>Twister Spiral: Curved in both directions, twister spiral jewelry is fun to wear and makes a
-					statement. The design of this piercing is said to put less stress on the navel area.</li>
-			</ul>
-			<h3 class="belly-heal">Healing Time</h3>
-			<p>6 to 8 months, fully healed by 12 months.</p>
-		</section>
+    <!-- 3-6 months— surface piercing -->
+    <div id="bdysurface">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Surface Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is a Surface Piercing?</h3>
+                    <p class="textcolor">Surface piercings are a class of piercing that includes both surface barbells
+                        and micro-dermals. The
+                        defining characteristic of a surface piercing is that it sits inside the skin, and does not exit
+                        the
+                        back of the tissue like a traditional piercing does.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Surface Piercings</h3>
+                    <ul class="textcolor">
+                        <li><span class="pointTitle">Surface Bars:</span>Surface barbells are stapled-shaped jewelry
+                            designed for surface piercings like nape
+                            hip and nape piercings. There's typically a 90-degree post on each end.</li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">3 to 6 months.</p>
+                </div>
+            </section>
+            <img src="./images/surface.png" alt="">
+        </div>
+    </div>
 
-		<section class="dermal-body">
-			<h2 class="dermal">Dermal Piercing</h2>
-			<h3 class="dermal-what">What is a Dermal Piercing?</h3>
-			<p>A dermal piercing, also known as micro-dermal piercings or single-point piercings—are piercings that lie
-				flat against the surface of the skin.</p>
-			<h3 class="dermal-type">Types of Jewelry Used for Dermal Piercings</h3>
-			<ul>
-				<li>Dermal Anchor: Dermal anchor, which comes in flat-footed and rounded-base varieties. These are both
-					acceptable, but a flat-footed anchor is more common and more widely liked because the foot is at an
-					angle, making it less likely to let go of your skin and pop out than a rounded-base type.</li>
-			</ul>
-			<h3 class="dermal-heal">Healing Time</h3>
-			<p>1 to 3 months.</p>
-		</section>
+    <!-- 6-8months— navel piercing -->
+    <div id="bdynavel">
+        <div class="earlow">
+            <section class="lobe-ear">
+                <div class="text">
+                    <h2 class="lobe">Navel Piercing</h2>
+                    <h3 class="lobe-what titleerji">What is a Navel Piercing?</h3>
+                    <p class="textcolor">A navel piercing, also known as belly button piercing, is a piercing through
+                        the skin located directly
+                        above the belly button. This allows the jewelry to hang slightly over the belly button to
+                        essentially
+                        highlight itself.</p>
+                    <h3 class="lobe-type titleerji">Types of Jewelry Used for Navel Piercings</h3>
+                    <ul class="textcolor">
+                        <li><span class="pointTitle">Curved Barbell:</span>The typical and most popular jewelry choice
+                            for belly button piercings is a curved
+                            barbell, which slightly curves outward to pop against your belly button and generally fits
+                            better
+                            with the natural shape of your body.</li>
+                        <li><span class="pointTitle">Twister Spiral:</span>Curved in both directions, twister spiral
+                            jewelry is fun to wear and makes a
+                            statement. The design of this piercing is said to put less stress on the navel area.</li>
+                    </ul>
+                    <h3 class="lobe-heal titleerji">Healing Time</h3>
+                    <p class="textcolor">6 to 8 months, fully healed by 12 months.</p>
+                </div>
+            </section>
+            <img src="./images/navel.png" alt="">
+        </div>
+    </div>
 
-		<section class="surface-body">
-			<h2 class="surface">Surface Piercing</h2>
-			<h3 class="surface-what">What is a Surface Piercing?</h3>
-			<p>Surface piercings are a class of piercing that includes both surface barbells and micro-dermals. The
-				defining characteristic of a surface piercing is that it sits inside the skin, and does not exit the
-				back of the tissue like a traditional piercing does.</p>
-			<h3 class="surface-type">Types of Jewelry Used for Surface Piercings</h3>
-			<ul>
-				<li>Surface Bars: Surface barbells are stapled-shaped jewelry designed for surface piercings like nape
-					hip and nape piercings. There's typically a 90-degree post on each end.</li>
-			</ul>
-			<h3 class="surface-heal">Healing Time</h3>
-			<p>3 to 6 months.</p>
-		</section>
-	</main>
-	<!--
 
-		This is where you should link your JS file.
-	-->
-
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,292 +1,1239 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700;800&family=Inter:wght@400;700;800&display=swap');
 
-@media screen and (width >=320px) {
-	.content-container {
-		margin: 0 auto;
-		max-width: 768px;
-	}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    background-color: #bbb;
 }
 
 body {
-	background: #000;
+    height: 100vh;
+    color: #fff;
+    background-color: #000;
 }
 
+/* iphone */
+@media screen and (max-width: 435px) {
 
-img {
-	width: 100vw;
-	height: 381px;
-	object-fit: cover;
-	padding: 150px;
-	margin: 0;
+    /* homepage */
+    #index {
+        padding-top: 25vh;
+        height: 100%;
+        position: relative;
+    }
+
+    .index_container {
+
+        height: 35vh;
+        position: relative;
+    }
+
+    .index_phone_img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .index_pc_img {
+        display: none;
+    }
+
+    .index_title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 48px;
+        color: #DC3545;
+        font-weight: 800;
+    }
+
+    .index_intro {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .index_footer {
+        padding: 20px 10px 0;
+    }
+
+    .index_intro_two {
+        margin-top: 10px;
+    }
+
+    .index_start-button {
+        background-color: white;
+        color: #495057;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Where do you want it to be? */
+    #whereToBe {
+        height: 100%;
+    }
+
+    .whereToBe_wherepage {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whereToBe_wherepage>h2 {
+        font-size: 25px;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
+
+    .whereToBe_wherepage_btn {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .whereToBe_wherepage_btn>button {
+        margin-top: 40px;
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        color: #6C757D;
+    }
+
+    #painLevel {
+        height: 100%;
+    }
+
+    .painLevel_painpage {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+
+    .painLevel_oneimg {
+        width: 100%;
+        height: 20%;
+    }
+
+    .painLevel_twoimg {
+        width: 100%;
+        height: 30%;
+    }
+
+    .painLevel_pc_img {
+        display: none;
+    }
+
+    .painLevel_text {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .painLevel_pain {
+        font-weight: 900;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.7px;
+    }
+
+    .painLevel_button-group-pain {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .painLevel_button-group-pain>button {
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 80px;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(1) {
+        background-color: #ADB5BD;
+        color: #6C757D;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(1):hover {
+        background-color: #73777b;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(2) {
+        background-color: #DEE2E6;
+        color: #6C757D;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(2):hover {
+        background-color: #b8babc;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(3) {
+        background-color: #F8F9FA;
+        color: #6C757D;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(3):hover {
+        background-color: #cfd1d3;
+    }
+
+    #howlongEar {
+        height: 100%;
+    }
+
+    #howlongLip {
+        height: 100%;
+    }
+
+    #howlongBody {
+        height: 100%;
+    }
+
+    .timepage {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .rectangle {
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .time {
+        color: #343A40;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.7px;
+        text-align: center;
+    }
+
+    .button-group-time {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .button-group-time>button {
+        border: none;
+        outline: none;
+        height: 35px;
+        width: 100px;
+        color: #FFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .button-group-time>button:nth-child(1) {
+        background-color: #CED4DA;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .button-group-time>button:nth-child(1):hover {
+        background-color: #73777b;
+    }
+
+    .button-group-time>button:nth-child(2) {
+        background-color: #495057;
+    }
+
+    .button-group-time>button:nth-child(2):hover {
+        background-color: #b8babc;
+    }
+
+    .button-group-time>button:nth-child(3) {
+        background-color: #212529;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .button-group-time>button:nth-child(3):hover {
+        background-color: #cfd1d3;
+    }
+
+    /*  */
+    #earlobe {
+        height: 100%;
+    }
+
+    #earconch {
+        height: 100%;
+    }
+
+    #eartragus {
+        height: 100%;
+    }
+
+
+    #liptongue {
+        height: 100%;
+    }
+
+    #lipangel {
+        height: 100%;
+    }
+
+    #lipdahlia {
+        height: 100%;
+    }
+
+    #bdydermal {
+        height: 100%;
+    }
+
+    #bdysurface {
+        height: 100%;
+    }
+
+    #bdynavel {
+        height: 100%;
+    }
+
+    .earlow {
+        height: 100%;
+        position: relative;
+    }
+
+    .lobe-ear {
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: end;
+    }
+
+    .earlow img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35vh;
+        height: 45vh;
+        z-index: -1;
+    }
+
+    .lobe {
+        color: #DC3545;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: -0.76px;
+    }
+
+    .titleerji {
+        color: #E9ECEF;
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .textcolor {
+        color: #A2ABB5;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    ul {
+        padding-left: 20px;
+        color: #A2ABB5;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .pointTitle {
+        color: #e8ebee;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 18px;
+    }
+
 }
 
-.container {
-	position: relative;
-	text-align: center;
+/* ipad */
+@media screen and (min-width: 436px) and (max-width: 1025px) {
+
+    /* homepage */
+    #index {
+        padding-top: 25vh;
+        height: 100%;
+        position: relative;
+    }
+
+    .index_container {
+
+        height: 35vh;
+        position: relative;
+    }
+
+    .index_pc_img {
+        display: none;
+    }
+
+    .index_phone_img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .index_title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        font-family: 'Inknut Antiqua', serif;
+        color: #DC3545;
+        font-weight: 800;
+    }
+
+    .index_intro {
+        font-size: 14px;
+        color: #DEE2E6;
+        font-family: 'Inknut Antiqua', serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .index_footer {
+        padding: 20px 10px 0;
+    }
+
+    .index_intro_two {
+        margin-top: 10px;
+    }
+
+    .index_start-button {
+        width: 150px;
+        height: 55px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        padding: 10px 15px;
+        font-weight: 400;
+        background-color: white;
+        color: #495057;
+        font-family: 'Inter', sans-serif;
+    }
+
+
+    /* <!-- Where do you want it to be?--> */
+    #whereToBe {
+        height: 100%;
+    }
+
+    .whereToBe_wherepage {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whereToBe_wherepage>h2 {
+        color: #FFF;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
+
+    .whereToBe_wherepage_btn {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .whereToBe_wherepage_btn>button {
+        margin-top: 50px;
+        width: 200px;
+        height: 60px;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        color: #7d848a;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    /* What is your pain level? */
+    #painLevel {
+        height: 100%;
+    }
+
+    .painLevel_painpage {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+
+    .painLevel_pc_img {
+        display: none;
+    }
+
+    .painLevel_oneimg {
+        width: 100%;
+        height: 20%;
+    }
+
+    .painLevel_twoimg {
+        width: 100%;
+        height: 30%;
+    }
+
+    .painLevel_text {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .painLevel_pain {
+        color: #FFF;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 35px;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.7px;
+    }
+
+    .painLevel_button-group-pain {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .painLevel_button-group-pain>button {
+        border: none;
+        outline: none;
+        height: 65px;
+        width: 160px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(1) {
+        background-color: #ADB5BD;
+        color: #6C757D;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(1):hover {
+        background-color: #73777b;
+
+    }
+
+    .button-group-pain>button:nth-child(2) {
+        background-color: #DEE2E6;
+        color: #6C757D;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(2):hover {
+        background-color: #b8babc;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(3) {
+        background-color: #F8F9FA;
+        color: #6C757D;
+        background-color: #f8f9fa;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(3):hover {
+        background-color: #cfd1d3;
+    }
+
+    /* How long do you expect it to heal? */
+    #howlongEar {
+        height: 100%;
+    }
+
+    #howlongLip {
+        height: 100%;
+    }
+
+    #howlongBody {
+        height: 100%;
+    }
+
+    .timepage {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .rectangle {
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .time {
+        color: #343A40;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 35px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .button-group-time {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .button-group-time>button {
+        border: none;
+        outline: none;
+        height: 60px;
+        width: 180px;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .button-group-time>button:nth-child(1) {
+        background-color: #CED4DA;
+        color: #FFF;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .button-group-time>button:nth-child(1):hover {
+        background-color: #73777b;
+    }
+
+    .button-group-time>button:nth-child(2) {
+        background-color: #495057;
+        color: #FFF;
+    }
+
+    .button-group-time>button:nth-child(2):hover {
+        background-color: #b8babc;
+    }
+
+    .button-group-time>button:nth-child(3) {
+        background-color: #212529;
+        color: #FFF;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .button-group-time>button:nth-child(3):hover {
+        background-color: #cfd1d3;
+    }
+
+
+    /*  */
+    #earlobe {
+        height: 100%;
+    }
+
+    #earconch {
+        height: 100%;
+    }
+
+    #eartragus {
+        height: 100%;
+    }
+
+
+    #liptongue {
+        height: 100%;
+    }
+
+    #lipangel {
+        height: 100%;
+    }
+
+    #lipdahlia {
+        height: 100%;
+    }
+
+    #bdydermal {
+        height: 100%;
+    }
+
+    #bdysurface {
+        height: 100%;
+    }
+
+    #bdynavel {
+        height: 100%;
+    }
+
+    .earlow {
+        height: 100%;
+        position: relative;
+    }
+
+    .lobe-ear {
+        height: 100%;
+        padding: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: end;
+    }
+
+    .earlow img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35vh;
+        height: 45vh;
+        z-index: -1;
+    }
+
+    .lobe {
+        font-size: 70px;
+        font-weight: 900;
+        color: #DC3545;
+        line-height: 75px;
+        font-family: 'Inknut Antiqua', serif;
+        font-style: normal;
+    }
+
+    .titleerji {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #E9ECEF;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .textcolor {
+        font-size: 16px;
+        color: #A2ABB5;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    ul {
+        padding-left: 25px;
+        color: #A2ABB5;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    li {
+        padding: 10px 0;
+    }
+
+    .pointTitle {
+        color: #e8ebee;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+    }
 }
 
-h1 {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 150px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-20%, -80%);
-}
+/* pc */
+@media screen and (min-width: 1026px) {
 
-.intro {
-	color: #DEE2E6;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 7px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
+    /* index */
+    #index {
+        padding-top: 25vh;
+        height: 100%;
+    }
 
-.start-button {
-	background-color: white;
-	color: #495057;
-	border-radius: 8px;
-	padding: 16px 24px;
-	font-size: 16px;
-	font-family: 'Inter', sans-serif;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-}
+    .index_container {
+
+        height: 45vh;
+        position: relative;
+    }
+
+    .index_pc_img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .index_phone_img {
+        display: none;
+    }
+
+    .index_title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        font-family: 'Inknut Antiqua', serif;
+        color: #DC3545;
+        font-weight: 800;
+    }
+
+    .index_intro {
+        color: #DEE2E6;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .index_footer {
+        padding: 12vh 50px 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .index_intro_two {
+        margin-top: 15px;
+    }
+
+    .index_start-button {
+        background-color: white;
+        color: #495057;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        width: 130px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* ------------------Where To Be------------------ */
+    #whereToBe {
+        height: 100%;
+    }
+
+    .whereToBe_wherepage {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px 0 100px;
+    }
+
+    .whereToBe_wherepage>h2 {
+        font-size: 48px;
+        font-family: 'Inknut Antiqua', serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+    }
+
+    .whereToBe_wherepage_btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80%;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        color: #6C757D;
+    }
+
+    .whereToBe_wherepage_btn>button {
+        width: 130px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* painLevel-------------------------------------------------- */
+    #painLevel {
+        height: 100%;
+    }
+
+    .painLevel_painpage {
+        height: 100%;
+        position: relative;
+        display: flex;
+    }
+
+    .painLevel_oneimg {
+        display: none;
+    }
+
+    .painLevel_twoimg {
+        display: none;
+    }
+
+    .painLevel_pc_img {
+        width: 32%;
+        height: 100%;
+    }
+
+    .painLevel_text {
+        width: 68%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .painLevel_pain {
+        font-size: 44px;
+        font-weight: 900;
+        color: #FFF;
+        font-family: 'Inknut Antiqua', serif;
+        line-height: normal;
+        letter-spacing: -0.88px;
+    }
+
+    .painLevel_button-group-pain {
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .painLevel_button-group-pain>button {
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 80px;
+        color: #6C757D;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(1) {
+        background-color: #aeb5bc;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .button-group-pain>button:nth-child(1):hover {
+        background-color: #73777b;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(2) {
+        background-color: #dfe2e6;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(2):hover {
+        background-color: #b8babc;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(3) {
+        background-color: #f8f9fa;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .painLevel_button-group-pain>button:nth-child(3):hover {
+        background-color: #cfd1d3;
+    }
+
+    #howlongEar {
+        height: 100%;
+    }
+
+    #howlongLip {
+        height: 100%;
+    }
+
+    #howlongBody {
+        height: 100%;
+    }
+
+    .timepage {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .rectangle {
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: #000;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Inknut Antiqua', serif;
+    }
+
+    .button-group-time {
+        display: flex;
+        margin-top: 50px;
+
+    }
+
+    .button-group-time>button {
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 140px;
+        color: #212529;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .button-group-time>button:nth-child(1) {
+        background-color: #aeb5bc;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .button-group-time>button:nth-child(1):hover {
+        background-color: #73777b;
+    }
+
+    .button-group-time>button:nth-child(2) {
+        background-color: #CED4DA
+    }
+
+    .button-group-time>button:nth-child(2):hover {
+        background-color: #b8babc;
+    }
+
+    .button-group-time>button:nth-child(3) {
+        background-color: #dfe2e6;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .button-group-time>button:nth-child(3):hover {
+        background-color: #cfd1d3;
+    }
 
 
 
-.where {
-	color: #FFF;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: -0.8px;
-}
+    /*  */
+    #earlobe {
+        height: 100%;
+    }
 
-.ear-button,
-.lip-button,
-.body-button {
-	font-family: Inter;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 18px;
-	color: #6C757D;
-	border-radius: 8px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-	padding: 16px 24px;
-}
+    #earconch {
+        height: 100%;
+    }
+
+    #eartragus {
+        height: 100%;
+    }
 
 
-.pain {
-	color: #FFF;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: -0.7px;
-}
+    #liptongue {
+        height: 100%;
+    }
 
-.button-group-pain {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+    #lipangel {
+        height: 100%;
+    }
 
-.button-low {
-	background-color: #ADB5BD;
-	color: #6C757D;
-	padding: 10px 16px;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	width: 226px;
-	height: 53px;
-	text-align: center;
-	line-height: 53px
-}
+    #lipdahlia {
+        height: 100%;
+    }
 
-.button-mid {
-	background-color: #DEE2E6;
-	color: #6C757D;
-	padding: 10px 16px;
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	width: 226px;
-	height: 53px;
-	text-align: center;
-	line-height: 53px
-}
+    #bdydermal {
+        height: 100%;
+    }
 
-.button-high {
-	background-color: #F8F9FA;
-	color: #6C757D;
-	padding: 10px 16px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	width: 226px;
-	height: 53px;
-	text-align: center;
-	line-height: 53px
-}
+    #bdysurface {
+        height: 100%;
+    }
 
-.time {
-	color: #343A40;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: -0.7px;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+    #bdynavel {
+        height: 100%;
+    }
 
-.rectangle {
-	height: 338px;
-	width: 1280px;
-	background-color: white;
-	position: relative;
-	text-align: center;
-}
+    .earlow {
+        height: 100%;
+        display: flex;
+    }
 
-.button-group-time {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+    .lobe-ear {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+    }
 
-.button-2 {
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	color: #FFF;
-	text-align: center;
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	padding: 10px 16px;
-	background-color: #CED4DA;
-}
+    img {
+        width: 40%;
+        height: 100%;
+    }
 
-.button-4 {
-	color: #FFF;
-	text-align: center;
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	padding: 10px 16px;
-	background-color: #495057;
-}
+    .lobe {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 52px;
+        font-weight: 900;
+        color: #DC3545;
+    }
 
-.button-6 {
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	color: #FFF;
-	text-align: center;
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	padding: 10px 16px;
-	background-color: #212529;
-}
+    .titleerji {
+        color: #e8ebee;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: 'Inter', sans-serif;
+    }
 
-.conch-what,
-.conch-type,
-.conch-heal,
-.lobe-what,
-.lobe-type,
-.lobe-heal,
-.tragus-what,
-.tragus-type,
-.tragus-heal,
-.angel-what,
-.angel-type,
-.angel-heal,
-.tongue-what,
-.tongue-type,
-.tongue-heal,
-.dahlia-what,
-.dahlia-type,
-.dahlia-heal,
-.belly-what,
-.belly-type,
-.belly-heal,
-.dermal-what,
-.dermal-type,
-.dermal-heal,
-.surface-type,
-.surface-heal,
-.surface-what {
-	color: #E9ECEF;
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-}
+    .textcolor {
+        color: #9c9ea1;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
 
-ul {
-	color: #A2ABB5;
-	font-family: 'Inter', sans-serif;
-	font-size: 8px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 18px;
-}
+    ul {
+        color: #9c9ea1;
+        padding-left: 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
 
-p {
-	color: #A2ABB5;
-	font-family: 'Inter', sans-serif;
-	font-size: 8px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 18px;
-}
+    .pointTitle {
+        color: #e8ebee;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+    }
 
-.conch,
-.lobe,
-.tragus,
-.angel,
-.tongue,
-.dahlia,
-.belly,
-.dermal,
-.surface {
-	color: #DC3545;
-	font-family: 'Inknut Antiqua', serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 58px;
-	letter-spacing: -0.76px;
+
+
+
+
+
+
+
+
 }
